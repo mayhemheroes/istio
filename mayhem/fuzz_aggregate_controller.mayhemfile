@@ -1,4 +1,4 @@
 project: Istio
-target: fuzz_markdown_render_raw
+target: fuzz_aggregate_controller
 cmds:
-- cmd: /out/fuzz_markdown_render_raw
+- cmd: /out/fuzz_aggregate_controller
