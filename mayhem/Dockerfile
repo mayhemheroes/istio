@@ -18,16 +18,16 @@
 FROM gcr.io/oss-fuzz-base/base-builder-go
 
 # Push the code into the container
-COPY . Istio
+COPY . istio
 
 # Remove the mayhem folder from the container
-RUN rm -rf Istio/mayhem
+RUN rm -rf istio/mayhem
 
 # Install the build script
 COPY mayhem/build.sh $SRC/
 
-# Set the directory to '$SRC/Istio'
-WORKDIR $SRC/Istio
+# Set the directory to '$SRC/gitea'
+WORKDIR $SRC/istio
 
 # Setup the environment & compile the program
 ENV FUZZING_LANGUAGE=go SANITIZER=address
