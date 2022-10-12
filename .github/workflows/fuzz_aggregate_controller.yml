@@ -48,7 +48,7 @@ jobs:
         mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
         args: --image ${{ steps.meta.outputs.tags }} --cmd /out/fuzz_aggregate_controller
           --target fuzz_aggregate_controller --file mayhem/fuzz_aggregate_controller.mayhemfile
-          --duration 650
+          --duration 800
         sarif-output: sarif
     - name: Upload SARIF file(s)
       uses: github/codeql-action/upload-sarif@v2
