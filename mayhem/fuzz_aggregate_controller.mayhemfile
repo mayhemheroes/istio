@@ -1,0 +1,4 @@
+project: Istio
+target: fuzz_markdown_render_raw
+cmds:
+- cmd: /out/fuzz_markdown_render_raw
